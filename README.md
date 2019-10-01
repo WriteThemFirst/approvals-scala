@@ -1,5 +1,5 @@
 <p align='center'>
-    <img alt='Write Them First!' src='https://raw.githubusercontent.com/WriteThemFirst/approvals-scala/master/etc/logo.png' />
+    <img alt='Write Them First!' src='https://raw.githubusercontent.com/WriteThemFirst/approvals-java/master/etc/logo.png' />
 </p>
 <p align='center'>
     <a href='https://travis-ci.org/WriteThemFirst/approvals-scala'>
