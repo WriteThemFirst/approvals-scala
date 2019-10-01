@@ -17,8 +17,7 @@
 <p align='center'>
     <a href='http://hits.dwyl.io/WriteThemFirst/approvals-scala'>
         <img src='http://hits.dwyl.io/WriteThemFirst/approvals-scala.svg' />
-    </a>
-    
+    </a>    
     <a href='https://github.com/WriteThemFirst/approvals-scala/issues/'>
         <img src='https://img.shields.io/github/issues/WriteThemFirst/approvals-scala.svg' />
     </a>
