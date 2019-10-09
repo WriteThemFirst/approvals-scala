@@ -57,7 +57,7 @@ which means you don't need any particular sbt/Maven configuration to retrieve it
 In your `build.sbt`, add this dependency:
 
 ```scala
-libraryDependencies += "com.github.writethemfirst" % "approvals-scala" % "0.11.1"
+libraryDependencies += "com.github.writethemfirst" % "approvals-scala" % "0.12.0"
 ```
 
 
@@ -69,7 +69,7 @@ In your `pom.xml`, add this dependency:
 <dependency>
     <groupId>com.github.writethemfirst</groupId>
     <artifactId>approvals-scala</artifactId>
-    <version>0.11.1</version>
+    <version>0.12.0</version>
     <scope>test</scope>
 </dependency>
 ```
