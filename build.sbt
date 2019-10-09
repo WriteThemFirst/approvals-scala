@@ -2,7 +2,9 @@ name := "approvals-scala"
 
 organization := "com.github.writethemfirst"
 
-version := "0.11.2-SNAPSHOT"
+val approvalsVersion = "0.12.0"
+
+version := approvalsVersion
 
 homepage := Some(url("https://github.com/WriteThemFirst/approvals-scala"))
 
@@ -13,9 +15,9 @@ libraryDependencies ++= Seq(scalaTest, approvalsJava, pprint)
 resolvers += Resolver.bintrayRepo("writethemfirst", "maven")
 resolvers += Resolver.mavenLocal
 
-lazy val scalaTest     = "org.scalatest"             %% "scalatest"     % "3.0.8"
-lazy val pprint        = "com.lihaoyi"               %% "pprint"        % "0.5.5"
-lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.11.2-SNAPSHOT"
+lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.8"
+lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.5"
+lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % approvalsVersion
 
 bintrayOrganization := Some("writethemfirst")
 licenses += ("GPL-3.0", url("https://opensource.org/licenses/GPL-3.0"))
