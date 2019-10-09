@@ -1,0 +1,12 @@
+test:
+  script:
+    - sbt test
+  cache:
+    key: sbt-$CI_BUILD_REF_NAME
+    paths:
+      - sbt-cache
+  variables:
+    SBT_OPTS: "-Dsbt.global.base=sbt-cache/sbtboot -Dsbt.boot.directory=sbt-cache/boot -Dsbt.ivy.home=sbt-cache/ivy"
+    COURSIER_CACHE: "sbt-cache/coursier"
+  image: colisweb/scala-sbt-gke:jdk8-aws-kube-2.12.6
+
