@@ -22,3 +22,12 @@ lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % approv
 bintrayOrganization := Some("writethemfirst")
 licenses += ("GPL-3.0", url("https://opensource.org/licenses/GPL-3.0"))
 bintrayRepository := "maven"
+
+pomExtra :=
+  <developers>
+    <developer>
+      <id>tyrcho</id>
+      <name>Michel Daviot</name>
+    </developer>
+  </developers>
+
