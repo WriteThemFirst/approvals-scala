@@ -20,8 +20,12 @@ lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.5"
 lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % approvalsVersion
 
 bintrayOrganization := Some("writethemfirst")
-licenses += ("GPL-3.0", url("https://opensource.org/licenses/GPL-3.0"))
+licenses := Seq("GPL-3.0" -> url("https://opensource.org/licenses/GPL-3.0"))
 bintrayRepository := "maven"
+
+homepage := Some(url("https://github.com/WriteThemFirst/approvals-scala"))
+scmInfo := Some(ScmInfo(url("https://github.com/WriteThemFirst/approvals-scala"), "scm:git:git@github.com:WriteThemFirst/approvals-scala.git"))
+publishMavenStyle := true
 
 pomExtra :=
   <developers>
