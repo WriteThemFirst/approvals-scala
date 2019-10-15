@@ -12,7 +12,7 @@ publish on bintray:
   only:
     - master
   script:
-    - sbt -Dbintray.user=tyrcho -Dbintray.pass=$BINTRAY_API_KEY publish
+    - sbt -Dbintray.user=tyrcho -Dbintray.pass=$BINTRAY_API_KEY "+ publish"
 
 image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
 variables:
