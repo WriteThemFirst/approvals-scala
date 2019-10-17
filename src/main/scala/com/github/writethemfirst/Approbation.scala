@@ -1,11 +1,17 @@
 package com.github.writethemfirst
 
 import com.github.writethemfirst.approvals.approvers.Approver
-import org.scalatest.{Matchers, Outcome, fixture}
+import org.scalatest.Outcome
+import org.scalatest.fixture.TestSuite
 import pprint.PPrinter
 import pprint.PPrinter.BlackWhite
+import java.util.Locale
 
-class Approbation extends fixture.FlatSpec with Matchers {
+trait Approbation {
+  self: TestSuite =>
+
+  // avoid serialization issues when workstation Locale differs from CI
+  Locale.setDefault(new Locale("en", "US"))
 
   private val approvals = (new Approver).testing(getClass)
   val prettify: PPrinter = BlackWhite.copy(defaultHeight = Int.MaxValue)
