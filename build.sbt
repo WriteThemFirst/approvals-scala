@@ -15,8 +15,8 @@ libraryDependencies ++= Seq(scalaTest, approvalsJava, pprint)
 resolvers += Resolver.bintrayRepo("writethemfirst", "maven")
 resolvers += Resolver.mavenLocal
 
+lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.6"
 lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.0"
-lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.5"
 lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % approvalsVersion
 
 bintrayOrganization := Some("writethemfirst")
