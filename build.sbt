@@ -2,7 +2,7 @@ name := "approvals-scala"
 
 organization := "com.github.writethemfirst"
 
-version := "0.12.2"
+version := "0.13.0"
 
 homepage := Some(url("https://github.com/WriteThemFirst/approvals-scala"))
 
@@ -15,7 +15,7 @@ resolvers += Resolver.mavenLocal
 
 lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.8"
 lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.0"
-lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.12.0"
+lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.13.0"
 
 bintrayOrganization := Some("writethemfirst")
 licenses := Seq("GPL-3.0" -> url("https://opensource.org/licenses/GPL-3.0"))
