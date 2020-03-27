@@ -15,7 +15,7 @@ resolvers += Resolver.mavenLocal
 
 lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.9"
 lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.1"
-lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.12.0"
+lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.13.0"
 
 bintrayOrganization := Some("writethemfirst")
 licenses := Seq("GPL-3.0" -> url("https://opensource.org/licenses/GPL-3.0"))
