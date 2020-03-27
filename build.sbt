@@ -14,7 +14,7 @@ resolvers += Resolver.bintrayRepo("writethemfirst", "maven")
 resolvers += Resolver.mavenLocal
 
 lazy val pprint = "com.lihaoyi" %% "pprint" % "0.5.9"
-lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.0"
+lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.1"
 lazy val approvalsJava = "com.github.writethemfirst" % "approvals-java" % "0.12.0"
 
 bintrayOrganization := Some("writethemfirst")
