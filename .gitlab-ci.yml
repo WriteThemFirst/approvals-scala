@@ -1,24 +1,18 @@
-stages:
-  - test
-  - publish
+include:
+  - 'https://gitlab.com/colisweb-open-source/ci-common/raw/v8.0.1/templates/scala.yml'
 
-sbt test:
-  stage: test
-  script:
-    - sbt test
+test approvals-scala:
+  extends: .sbt-test
+  tags: []
+
+unused-dependencies:
+  extends: .sbt-unused-dependencies
+  tags: []
+
+version:
+  extends: .version
+  tags: []
 
 publish on bintray:
-  stage: publish
-  only:
-    - master
-  script:
-    - sbt -Dbintray.user=tyrcho -Dbintray.pass=$BINTRAY_API_KEY "+ publish"
-
-image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
-variables:
-  SBT_OPTS: "-Dsbt.global.base=sbt-cache/sbtboot -Dsbt.boot.directory=sbt-cache/boot -Dsbt.ivy.home=sbt-cache/ivy"
-  COURSIER_CACHE: "sbt-cache/coursier"
-cache:
-  key: "sbt-$CI_BUILD_REF_NAME"
-  paths:
-    - sbt-cache
+  extends: .bintray-publish
+  tags: []

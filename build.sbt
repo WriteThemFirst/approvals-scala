@@ -2,11 +2,9 @@ name := "approvals-scala"
 
 organization := "com.github.writethemfirst"
 
-version := "0.13.0"
-
 homepage := Some(url("https://github.com/WriteThemFirst/approvals-scala"))
 
-crossScalaVersions := List("2.12.10", "2.13.1")
+crossScalaVersions := List("2.12.11", "2.13.1")
 
 libraryDependencies ++= Seq(scalaTest, approvalsJava, pprint)
 
