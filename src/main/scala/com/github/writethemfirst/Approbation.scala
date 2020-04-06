@@ -13,7 +13,7 @@ trait Approbation {
   // avoid serialization issues when workstation Locale differs from CI
   Locale.setDefault(new Locale("en", "US"))
 
-  private val approvals = (new Approver).testing(getClass)
+  private val approvals  = (new Approver).testing(getClass)
   val prettify: PPrinter = BlackWhite.copy(defaultHeight = Int.MaxValue)
 
   override type FixtureParam = Approver
