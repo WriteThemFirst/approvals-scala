@@ -31,3 +31,4 @@ pomExtra :=
     </developer>
   </developers>
 
+Global / onChangedBuildSource := ReloadOnSourceChanges
