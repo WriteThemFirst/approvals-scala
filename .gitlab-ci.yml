@@ -1,5 +1,5 @@
 include:
-  - 'https://gitlab.com/colisweb-open-source/ci-common/raw/v8.1.0/templates/scala.yml'
+  - 'https://gitlab.com/colisweb-open-source/ci-common/raw/v8.2.0/templates/scala.yml'
 
 test approvals-scala:
   extends: .sbt-test
@@ -16,3 +16,5 @@ version:
 publish on bintray:
   extends: .bintray-publish
   tags: []
+  variables:
+    BINTRAY_USER: tyrcho
