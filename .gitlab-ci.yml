@@ -4,10 +4,12 @@ include:
 test approvals-scala:
   extends: .sbt-test
   tags: []
+  before_script: []
 
 unused-dependencies:
   extends: .sbt-unused-dependencies
   tags: []
+  before_script: []
 
 version:
   extends: .version
