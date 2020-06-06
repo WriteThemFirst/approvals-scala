@@ -5,19 +5,9 @@
     <a href='https://travis-ci.org/WriteThemFirst/approvals-scala'>
         <img src='https://travis-ci.org/WriteThemFirst/approvals-scala.svg?branch=master' />
     </a>
-    <a href='http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.writethemfirst%22%20AND%20a%3A%22approvals-scala%22'>
-        <img src='https://img.shields.io/maven-central/v/com.github.writethemfirst/approvals-scala.svg' />
+    <a href='https://bintray.com/writethemfirst/maven/approvals-scala'>
+        <img src='https://img.shields.io/bintray/v/writethemfirst/maven/approvals-scala' />
     </a>
-</p>
-<p align='center'>
-    <a href='https://bintray.com/writethemfirst/maven/approvals-scala/_latestVersion'>
-        <img src='https://api.bintray.com/packages/writethemfirst/maven/approvals-scala/images/download.svg' />
-    </a>
-</p>
-<p align='center'>
-    <a href='http://hits.dwyl.io/WriteThemFirst/approvals-scala'>
-        <img src='http://hits.dwyl.io/WriteThemFirst/approvals-scala.svg' />
-    </a>    
     <a href='https://github.com/WriteThemFirst/approvals-scala/issues/'>
         <img src='https://img.shields.io/github/issues/WriteThemFirst/approvals-scala.svg' />
     </a>
@@ -27,16 +17,8 @@
     <a href='https://github.com/WriteThemFirst/approvals-scala'>
         <img src='https://img.shields.io/github/languages/code-size/WriteThemFirst/approvals-scala.svg' />
     </a>
-</p>
-<p align='center'>
     <a href='https://www.gnu.org/licenses/gpl-3.0'>
         <img src='https://img.shields.io/badge/License-GPL%20v3-blue.svg' />
-    </a>
-    <a href='http://semver.org/spec/v2.0.0.html'>
-        <img src='https://img.shields.io/SemVer/2.0.0.png' />
-    </a>
-    <a href='https://github.com/WriteThemFirst/approvals-scala/pulls'>
-        <img src='https://img.shields.io/badge/made%20with-%E2%99%A5-pink.svg' />
     </a>
 </p>
 
@@ -49,29 +31,16 @@ Approvals-Scala is a lightweight open source assertion/verification library to f
 
 # Get Approvals-Scala
 
-Approvals-Scala is released on <a href='http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.writethemfirst%22%20AND%20a%3A%22approvals-scala%22'><img src='https://img.shields.io/maven-central/v/com.github.writethemfirst/approvals-scala.svg' /></a> 
-which means you don't need any particular sbt/Maven configuration to retrieve it.
+Approvals-Scala is released on Bintray.
 
 ## Sbt 
 
 In your `build.sbt`, add this dependency:
 
 ```scala
-libraryDependencies += "com.github.writethemfirst" % "approvals-scala" % "0.12.0"
-```
+resolvers += Resolver.bintrayRepo("writethemfirst", "maven")
 
-
-## Maven
-
-In your `pom.xml`, add this dependency:
-
-```xml
-<dependency>
-    <groupId>com.github.writethemfirst</groupId>
-    <artifactId>approvals-scala</artifactId>
-    <version>0.12.0</version>
-    <scope>test</scope>
-</dependency>
+libraryDependencies += "com.github.writethemfirst" % "approvals-scala" % "1.0.1"
 ```
 
 
