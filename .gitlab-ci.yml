@@ -6,10 +6,11 @@ test approvals-scala:
   tags: []
   before_script: []
 
-unused-dependencies:
-  extends: .sbt-unused-dependencies
-  tags: []
-  before_script: []
+# deactivated, strange behaviour with scalatest 3.2.0
+#unused-dependencies:
+#  extends: .sbt-unused-dependencies
+#  tags: []
+#  before_script: []
 
 version:
   extends: .version

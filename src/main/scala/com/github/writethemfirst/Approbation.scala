@@ -1,14 +1,14 @@
 package com.github.writethemfirst
 
-import com.github.writethemfirst.approvals.approvers.Approver
-import org.scalatest.Outcome
-import org.scalatest.fixture.TestSuite
-import pprint.PPrinter
-import pprint.PPrinter.BlackWhite
 import java.util.Locale
 
+import com.github.writethemfirst.approvals.approvers.Approver
+import org.scalatest.{FixtureTestSuite, Outcome}
+import pprint.PPrinter
+import pprint.PPrinter.BlackWhite
+
 trait Approbation {
-  self: TestSuite =>
+  self: FixtureTestSuite =>
 
   // avoid serialization issues when workstation Locale differs from CI
   Locale.setDefault(new Locale("en", "US"))
