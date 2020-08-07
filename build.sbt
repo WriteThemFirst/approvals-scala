@@ -8,9 +8,6 @@ crossScalaVersions := List("2.12.11", "2.13.2")
 
 libraryDependencies ++= Seq(scalaTest, approvalsJava, pprint)
 
-ThisBuild / pushRemoteCacheTo := Some(MavenCache("local-cache", file("/tmp/remote-cache")))
-
-
 resolvers += Resolver.bintrayRepo("writethemfirst", "maven")
 resolvers += Resolver.mavenLocal
 
