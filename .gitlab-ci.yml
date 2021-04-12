@@ -16,8 +16,18 @@ version:
   extends: .version
   tags: []
 
-publish on bintray:
-  extends: .bintray-publish
-  tags: []
-  variables:
-    BINTRAY_USER: tyrcho
+publish on gitlab:
+  stage: publish
+  only:
+    - master
+  script:
+    - sbt "+ publish"
+
+image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
+variables:
+  SBT_OPTS: "-Dsbt.global.base=sbt-cache/sbtboot -Dsbt.boot.directory=sbt-cache/boot -Dsbt.ivy.home=sbt-cache/ivy"
+  COURSIER_CACHE: "sbt-cache/coursier"
+cache:
+  key: "sbt-$CI_BUILD_REF_NAME"
+  paths:
+    - sbt-cache
