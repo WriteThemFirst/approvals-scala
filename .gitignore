@@ -70,3 +70,5 @@ local.*
 .gitsecret/keys/random_seed
 !*.secret
 secrets-env.sh
+sonatype_credentials
+/.bsp/
