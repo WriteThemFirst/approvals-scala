@@ -9,8 +9,6 @@ ThisBuild / scmInfo := Some(ScmInfo(
   "scm:git:git@github.com:colisweb/approvals-scala.git"
 ))
 
-enablePlugin(GitlabPlugin)   // Enable the plugin (build.sbt)
-
 ThisBuild / developers := List(
   Developer(
     id = "tyrcho",
