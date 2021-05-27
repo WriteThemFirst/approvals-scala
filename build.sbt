@@ -22,13 +22,6 @@ ThisBuild / description := "Approbation lib for scala"
 ThisBuild / licenses := List("GPL-3.0" -> url("https://opensource.org/licenses/GPL-3.0"))
 ThisBuild / homepage := Some(url("https://github.com/colisweb/approvals-scala"))
 
-// Remove all additional repository other than Maven Central from POM
-ThisBuild / pomIncludeRepository := { _ => false }
-
-ThisBuild / publishTo := {
-  Some("releases" at "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
-}
-ThisBuild / publishMavenStyle := true
 
 crossScalaVersions := List("2.12.13", "2.13.5")
 
@@ -38,15 +31,8 @@ ThisBuild / pushRemoteCacheTo := Some(MavenCache("local-cache", file("/tmp/remot
 
 version := "0.0.3"
 
-credentials += Credentials(Path(".") / "sonatype_credentials")
-
-javaOptions += "-Dhttp.maxRedirects=100"
-resolvers += Resolver.mavenLocal
-
 lazy val pprint = "com.lihaoyi" %% "pprint" % "0.6.5"
 lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.8"
 lazy val approvalsJava = "com.colisweb" % "approvals-java" % "0.13.2"
-
-
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
